@@ -420,9 +420,9 @@ h3 {
   flex-shrink: 0;
   margin-top: 0.5rem;
 }
-.survival .mode-dot  { background: var(--dim); }
-.stable .mode-dot    { background: var(--muted); }
-.thriving .mode-dot  { background: var(--white); box-shadow: 0 0 10px rgba(255,255,255,0.3); }
+.survival .mode-dot  { background: #c0392b; box-shadow: 0 0 10px rgba(192,57,43,0.5); }
+.stable .mode-dot    { background: #e8a030; box-shadow: 0 0 10px rgba(232,160,48,0.4); }
+.thriving .mode-dot  { background: #27ae60; box-shadow: 0 0 10px rgba(39,174,96,0.4); }
 
 .mode strong { display: block; margin-bottom: 0.35rem; font-size: 0.88rem; color: var(--text); }
 .mode p { font-size: 0.82rem; color: var(--muted); margin: 0; line-height: 1.5; }
@@ -538,6 +538,30 @@ h3 {
   transition: border-color 0.2s;
 }
 .contact-link:hover { border-color: var(--text); }
+
+.cta-group {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btn-cv {
+  display: inline-block;
+  font-family: var(--font-title);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  color: var(--bg);
+  background: var(--text);
+  text-decoration: none;
+  padding: 0.6rem 1.4rem;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-cv:hover {
+  background: var(--white);
+  color: var(--bg);
+}
 
 .artist-meta { display: flex; flex-direction: column; gap: 2.2rem; margin-top: 0.5rem; }
 
