@@ -77,6 +77,23 @@ nav a {
 }
 nav a:hover, nav a.active { color: var(--white); }
 
+.lang-switch {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-family: var(--font);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+  margin-left: 1.5rem;
+}
+.lang-switch:hover {
+  border-color: var(--text);
+  color: var(--white);
+}
+
 /* ---- SECTIONS ---- */
 section {
   min-height: 100vh;
