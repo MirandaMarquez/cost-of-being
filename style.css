@@ -275,6 +275,66 @@ h3 {
 .plug-callout p { font-size: 0.92rem; color: var(--muted); line-height: 1.7; margin-bottom: 1rem; }
 .plug-callout p:last-child { margin-bottom: 0; }
 
+/* ---- PROPOSALS SLIDER ---- */
+.proposals { margin-bottom: 4rem; }
+
+.slider {
+  position: relative;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.slides { position: relative; }
+
+.slide {
+  display: none;
+  width: 100%;
+}
+.slide.active { display: block; }
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: none;
+}
+
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.75);
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.2s;
+  font-family: var(--font);
+}
+.slide-btn:hover { background: rgba(0,0,0,0.95); }
+.slide-btn.prev { left: 0; }
+.slide-btn.next { right: 0; }
+
+.slide-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: #fff;
+  border-top: 1px solid #e0e0e0;
+}
+
+.dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.dot.active { background: #000; }
+
 /* ---- ORGANS TABLE (interactive) ---- */
 .organs { margin-top: 0; }
 

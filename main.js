@@ -75,6 +75,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // ---- PROPOSALS SLIDER ----
+  const slides = document.querySelectorAll('.slide');
+  const dots   = document.querySelectorAll('.dot');
+  let current  = 0;
+
+  function goTo(n) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (n + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+  }
+
+  document.querySelector('.slide-btn.prev')?.addEventListener('click', () => goTo(current - 1));
+  document.querySelector('.slide-btn.next')?.addEventListener('click', () => goTo(current + 1));
+  dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+
+  // auto-advance every 5s
+  setInterval(() => goTo(current + 1), 5000);
+
   // ---- INTERACTIVE ORGAN TABLE ----
   const organRows = document.querySelectorAll('.organ-row:not(.header)');
   const costDisplay = document.getElementById('costValue');
