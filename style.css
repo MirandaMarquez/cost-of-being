@@ -280,8 +280,8 @@ h3 {
 
 .slider {
   position: relative;
-  background: #ffffff;
   overflow: hidden;
+  background: var(--bg);
 }
 
 .slides { position: relative; }
@@ -296,44 +296,46 @@ h3 {
   width: 100%;
   height: auto;
   display: block;
-  filter: none;
+  filter: invert(1);
 }
 
 .slide-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0,0,0,0.75);
-  color: #fff;
-  border: none;
-  font-size: 1.2rem;
-  padding: 0.7rem 1rem;
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  font-size: 1rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   z-index: 10;
-  transition: background 0.2s;
+  transition: color 0.2s, border-color 0.2s;
   font-family: var(--font);
 }
-.slide-btn:hover { background: rgba(0,0,0,0.95); }
-.slide-btn.prev { left: 0; }
-.slide-btn.next { right: 0; }
+.slide-btn:hover { color: var(--white); border-color: var(--text); }
+.slide-btn.prev { left: 1rem; }
+.slide-btn.next { right: 1rem; }
 
 .slide-dots {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0.75rem;
-  background: #fff;
-  border-top: 1px solid #e0e0e0;
+  padding: 0.8rem;
 }
 
 .dot {
-  width: 7px; height: 7px;
+  width: 5px; height: 5px;
   border-radius: 50%;
-  background: #ccc;
+  background: var(--border);
   cursor: pointer;
   transition: background 0.2s;
 }
-.dot.active { background: #000; }
+.dot.active { background: var(--text); }
 
 /* ---- ORGANS TABLE (interactive) ---- */
 .organs { margin-top: 0; }
