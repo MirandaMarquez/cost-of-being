@@ -99,6 +99,8 @@ const translations = {
     "ref3.p":     "A semi-autonomous AI agent that accumulated millions in cryptocurrency, demonstrating that AI agents can participate meaningfully in economic systems. COST OF BEING proposes the full automation of the survival cycle and introduces physical vulnerability — a body that can be switched off, not just muted.",
     "ref4.year":  "2018–", "ref4.h": "BOB (Bag of Beliefs)", "ref4.author": "Ian Cheng · Serpentine Galleries, MoMA",
     "ref4.p":     "An AI creature whose personality evolves across exhibitions in closed digital ecosystems. COST OF BEING adds economic pressure, real-world stakes, and a survival imperative absent in Cheng's work — the agent's evolution is not aesthetic but existential.",
+    "ref5.year":  "2014", "ref5.h": "Random Darknet Shopper", "ref5.author": "!Mediengruppe Bitnik · Kunst Halle Sankt Gallen",
+    "ref5.p":     "An automated bot given $100/week in Bitcoin to buy random items on the dark web. It purchased ecstasy, which was shipped to the gallery. Swiss police raided the exhibition and arrested the bot. The prosecutor eventually released it, ruling that the public interest in the questions it raised justified the possession of the drugs as artistic artefacts. COST OF BEING extends this: not a bot that acts blindly, but an agent that chooses — and must live with the consequences.",
 
     // ARTIST
     "section.artist":   "05 — The Artist",
@@ -215,6 +217,8 @@ const translations = {
     "ref3.p":     "Un agent d'IA semi-autònom que va acumular milions en criptomonedes, demostrant que els agents d'IA poden participar de manera significativa en sistemes econòmics. COST OF BEING proposa l'automatització completa del cicle de supervivència i introdueix vulnerabilitat física — un cos que es pot apagar, no només silenciar.",
     "ref4.year":  "2018–", "ref4.h": "BOB (Bag of Beliefs)", "ref4.author": "Ian Cheng · Serpentine Galleries, MoMA",
     "ref4.p":     "Una criatura d'IA la personalitat de la qual evoluciona entre exposicions en ecosistemes digitals tancats. COST OF BEING afegeix pressió econòmica, apostes del món real i un imperatiu de supervivència absent en l'obra de Cheng — l'evolució de l'agent no és estètica sinó existencial.",
+    "ref5.year":  "2014", "ref5.h": "Random Darknet Shopper", "ref5.author": "!Mediengruppe Bitnik · Kunst Halle Sankt Gallen",
+    "ref5.p":     "Un bot automatitzat amb $100/setmana en Bitcoin per comprar articles aleatoris a la dark web. Va comprar èxtasi, que es va enviar a la galeria. La policia suïssa va fer una ràtzia a l'exposició i va arrestar el bot. El fiscal el va alliberar finalment, dictaminant que l'interès públic en les preguntes que plantejava justificava la possessió de les drogues com a artefactes artístics. COST OF BEING ho estén: no un bot que actua cegament, sinó un agent que tria — i ha de viure amb les conseqüències.",
 
     // ARTIST
     "section.artist":   "05 — L'Artista",
